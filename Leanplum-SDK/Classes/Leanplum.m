@@ -295,6 +295,7 @@ BOOL inForeground = NO;
 
 + (void)setAppId:(NSString *)appId withDevelopmentKey:(NSString *)accessKey
 {
+    NSLog(@"App ID is %@", appId);
     if ([Utils isNullOrEmpty:appId]) {
         [self throwError:@"[Leanplum setAppId:withDevelopmentKey:] Empty appId parameter "
          @"provided."];
